@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -13,7 +13,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   currency: 'USD'
 });
 
-class App extends Component {
+class App extends React.Component {
   state = {
     selected: {
       Processor: {
