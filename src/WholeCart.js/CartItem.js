@@ -17,8 +17,8 @@ class CartItem extends React.Component {
         </div>
       );
     });
+    
     return summary
-
   }
 }
 
