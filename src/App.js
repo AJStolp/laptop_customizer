@@ -1,6 +1,7 @@
-import React from 'react';
-import './App.css';
-// import Cart from './WholeCart.js/CartItem';
+import React from 'react'
+import './App.css'
+import Cart from './WholeCart.js/CartItem'
+import CustomList from './CustomizationList.js'
 
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -48,11 +49,11 @@ class App extends React.Component {
         <header>
           <h1>ELF Computing | Laptops</h1>
         </header>
+        <CustomList features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
         <main>
           <section className="main__summary">
             <h2>Your cart</h2>
-            {summary}
-            {total}
+            <Cart features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
           </section>
         </main>
       </div>
