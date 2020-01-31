@@ -1,4 +1,5 @@
 import React from 'react'
+import slugify from 'slugify';
 
 class CustomItems extends React.Component {
     render(){
