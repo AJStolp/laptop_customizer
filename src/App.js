@@ -58,6 +58,7 @@ class App extends React.Component {
           <section className="main__summary">
             <h2>Your cart</h2>
             {summary}
+            {total}
           </section>
         </main>
       </div>
