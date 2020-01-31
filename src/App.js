@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Cart from './WholeCart.js/CartItem'
-import CustomList from './CustomizationList.js'
+import CustomList from './CustomizationList.js/CustomList'
 
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
