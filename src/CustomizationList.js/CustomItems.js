@@ -37,9 +37,11 @@ class CustomItems extends React.Component {
           )
               
         })
-        return (
-          {features}
-        )
+
+            return (
+              {features}
+            )
+      
       }
 }
 
