@@ -45,11 +45,11 @@ class App extends React.Component {
         <header>
           <h1>ELF Computing | Laptops</h1>
         </header>
-        <CustomList features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
+        <CustomList features={this.props.features} currency={USCurrencyFormat} selected={this.state.selected} updateFeature={this.updateFeature}/>
         <main>
           <section className="main__summary">
             <h2>Your cart</h2>
-            <Cart features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
+            <Cart features={this.props.features} currency={USCurrencyFormat} selected={this.state.selected}/>
           </section>
         </main>
       </div>
