@@ -15,7 +15,7 @@ class CartTotal extends React.Component {
                 <div className="summary__total__label">Total</div>
                 <div className="summary__total__value">
                     {this.USCurrencyFormat.format(total)}
-            </div>
+                </div>
         </div>
         </section> 
         )
