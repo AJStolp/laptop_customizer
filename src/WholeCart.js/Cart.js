@@ -6,7 +6,7 @@ class Cart extends React.Component {
      render() {
         return (
             <div>
-                <CartItem currency={this.props.currency} selected={this.props.selected} features={this.props.features}/>
+                <CartItem currency={this.props.currency} features={this.props.features} selected={this.props.selected} />
                 <CartTotal currency={this.props.currency} features={this.props.features} selected={this.props.selected}/>
             </div>
         )
