@@ -39,21 +39,17 @@ class App extends React.Component {
   };
 
   render() {
-    const total = Object.keys(this.state.selected).reduce(
-      (acc, curr) => acc + this.state.selected[curr].cost,
-      0
-    );
 
     return (
       <div className="App">
         <header>
           <h1>ELF Computing | Laptops</h1>
         </header>
-        <CustomList features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
+        <CustomList features={this.props.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
         <main>
           <section className="main__summary">
             <h2>Your cart</h2>
-            <Cart features={this.state.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
+            <Cart features={this.props.feature} currency={USCurrencyFormat} selected={this.state.selected}/>
           </section>
         </main>
       </div>
